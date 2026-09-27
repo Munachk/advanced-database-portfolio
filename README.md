@@ -99,7 +99,6 @@ learned.*
 - **How the output was reviewed/verified:** all
   SQL was executed against a live MySQL instance via XAMPP/phpMyAdmin to
   confirm it runs correctly; schema and query logic were reviewed and
-  understood, not copied blindly; execution plan evidence (EXPLAIN output)
-  was independently captured from my own database, not assumed.
+  understood, not copied blindly; execution plan evidence was independently captured from my own database, not assumed.
 
 
