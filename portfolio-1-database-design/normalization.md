@@ -89,6 +89,4 @@ anomaly from the flat design is gone.
 `grade_id`. This is intentional: a grade can be renamed or retired later,
 and the history table needs to preserve *what the value was at the time of
 the event*, not what it currently resolves to. This is a standard
-audit-log trade-off — worth naming explicitly in your technical reflection
-since the rubric rewards "application of advanced database concepts," and
-knowing when *not* to fully normalize is part of that.
+audit-log trade-off.
