@@ -119,8 +119,8 @@ CREATE INDEX idx_history_employee    ON employment_history(employee_id);
 --    event_date explicitly in every INSERT instead.
 -- 2. CHECK constraints are parsed (no error) but silently NOT enforced
 --    on MySQL versions before 8.0.16. Run `SELECT VERSION();` and note
---    the result in your reflection -- if you're on an older version,
---    say so explicitly rather than assuming the CHECKs are active.
+--    the result.
+--    
 -- 3. ENGINE=InnoDB is required for foreign keys and for the row-level
 --    locking you'll rely on in Portfolio 3 (transactions/concurrency).
 --    The default engine in modern MySQL is already InnoDB.
