@@ -1,7 +1,7 @@
 # ER Diagram — PrimeTrust Bank HR Management System
 
 This renders automatically when viewed on GitHub (Mermaid support is native
-in GitHub's Markdown renderer — no extra tool needed). If your lecturer wants
+in GitHub's Markdown renderer — no extra tool needed). If you want
 an image file too, paste this block into the Mermaid Live Editor
 (https://mermaid.live) and export as PNG/SVG into this folder as `er-diagram.png`.
 
@@ -77,4 +77,4 @@ erDiagram
   with `ALTER TABLE` once `employee` exists. `audit_log` is intentionally
   **not** linked by a formal FK to every table (it stores `table_affected` +
   `record_id` instead) — this is a common trade-off for a generic, reusable
-  audit trail, and worth a sentence in your reflection.
+  audit trail.
