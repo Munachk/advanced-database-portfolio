@@ -123,6 +123,6 @@ CREATE INDEX idx_history_employee    ON employment_history(employee_id);
 --    say so explicitly rather than assuming the CHECKs are active.
 -- 3. ENGINE=InnoDB is required for foreign keys and for the row-level
 --    locking you'll rely on in Portfolio 3 (transactions/concurrency).
---    The default engine in modern MySQL is already InnoDB, but stating
---    it explicitly is good practice and worth a line in your README.
+--    The default engine in modern MySQL is already InnoDB.
+--  
 -- ------------------------------------------------------------
