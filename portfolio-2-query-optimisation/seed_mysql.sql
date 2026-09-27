@@ -45,19 +45,4 @@ INSERT INTO employment_history (employee_id, event_type, old_value, new_value, e
 (9, 'promotion', 'Senior Officer', 'Manager', '2021-01-15', 'HR-Admin2'),
 (7, 'resignation', 'active', 'resigned', '2023-03-01', 'HR-Admin1');
 
--- ------------------------------------------------------------
--- Evidence commands to run yourself and screenshot for Portfolio 2:
--- ------------------------------------------------------------
--- 1) BEFORE index (should show type: ALL, meaning full table scan):
---      EXPLAIN SELECT * FROM employee WHERE department_id = 1;
---
--- 2) Confirm indexes already declared in schema_mysql.sql are present:
---      SHOW INDEX FROM employee;
---
--- 3) AFTER (should show type: ref, using idx_employee_department):
---      EXPLAIN SELECT * FROM employee WHERE department_id = 1;
---
--- 4) For real timing (MySQL 8.0.18+), use:
---      EXPLAIN ANALYZE SELECT * FROM employee WHERE department_id = 1;
---    This prints actual execution time and row counts, not just the plan
---    -- stronger evidence than plain EXPLAIN, use this if your version supports it.
+
