@@ -9,14 +9,14 @@ Schema: `schema_mysql.sql`. Seed data: `seed_mysql_large.sql` (120 employees,
 Run `SELECT VERSION();` in the SQL tab and the output recorded, screenshot too attached `show_version.png`.
 
 > **MySQL version used:** `______10.4.32-MariaDB________`
-> (This matters: `EXPLAIN ANALYZE` needs 8.0.18+, and `CHECK` constraints
-> are only actually enforced from 8.0.16+ — note whichever applies to you.)
+> (This matters: `EXPLAIN ANALYZE` needs 8.0.18 +, and `CHECK` constraints
+> are only actually enforced from 8.0.16 +)
 
 ---
 
 ## Finding 1: filtering by a foreign key without an index
 
-**Before adding the index**, run:
+**Before adding the index**, run query:
 
 ```sql
 EXPLAIN SELECT * FROM employee WHERE department_id = 3;
