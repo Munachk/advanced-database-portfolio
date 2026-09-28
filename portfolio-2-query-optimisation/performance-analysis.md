@@ -26,13 +26,16 @@ EXPLAIN SELECT * FROM employee WHERE department_id = 3;
 **What to look for:** `type: ALL` means MySQL is scanning every row in the
 table to find matches — the `key` column will show `NULL` (no index used).
 
-Confirm the index exists (it's already declared in `schema_mysql.sql`):
+Find screenshot in `explain-before-index.png`
+
+To confirm the index exists (it's already declared in `schema_mysql.sql`):
 
 ```sql
 SHOW INDEX FROM employee;
 ```
+Find screenshot in `show_index.png`
 
-**After confirming the index**, re-run the same `EXPLAIN` and record the
+**After confirming the index**, re-run the same `EXPLAIN` and recorded the
 result:
 
 
@@ -40,17 +43,18 @@ result:
 `key: idx_employee_department` means MySQL is now using the index to jump
 directly to matching rows instead of scanning the table.
 
+Find screenshot in `explain-after-index.png`
 
-
-If your MySQL version supports it (8.0.18+), also run:
+also ran this query
 
 ```sql
-EXPLAIN ANALYZE SELECT * FROM employee WHERE department_id = 3;
+EXPLAIN ANALYZE SELECT * FROM employee WHERE department_id = 1;
 ```
 
 This reports **actual** execution time and row counts (not just the
-planned estimate), which is stronger evidence — screenshot that output too
-if available.
+planned estimate), which is stronger evidence.
+
+Find screenshot in `explain-analyze-after-index.png`
 
 ---
 
@@ -131,7 +135,7 @@ CREATE INDEX idx_employee_dept_hiredate ON employee(department_id, hire_date);
 
 ## Screenshots checklist for this folder
 
-- [ ] `mysql-version.png` — output of `SELECT VERSION();`
+- [ ] `show_version.png` — output of `SELECT VERSION();`
 - [ ] `explain-before-index.png`
 - [ ] `explain-after-index.png` (or `explain-analyze-*.png` if 8.0.18+)
 - [ ] `explain-q6-vs-q6b.png`
