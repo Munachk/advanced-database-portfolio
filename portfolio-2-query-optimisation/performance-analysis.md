@@ -6,7 +6,7 @@ Database: `primetrust_hr`, MySQL 10.4.32 (via XAMPP / phpMyAdmin).
 Schema: `schema_mysql.sql`. Seed data: `seed_mysql_large.sql` (120 employees,
 4 branches, 5 departments, 66 promotion/resignation history rows).
 
-Run `SELECT VERSION();` in the SQL tab and the output recorded, screenshot too attached 'show version.png'.
+Run `SELECT VERSION();` in the SQL tab and the output recorded, screenshot too attached 'show_version.png'.
 
 > **MySQL version used:** `______10.4.32-MariaDB________`
 > (This matters: `EXPLAIN ANALYZE` needs 8.0.18+, and `CHECK` constraints
