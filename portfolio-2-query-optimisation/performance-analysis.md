@@ -68,7 +68,7 @@ once":
 - **Q6b** — a single `GROUP BY ... HAVING` aggregation joined back to
   `employee` once.
 
-Run both and compare their plans:
+Running both to compare their plans:
 
 ```sql
 EXPLAIN SELECT e.employee_id, e.first_name, e.last_name
@@ -85,10 +85,12 @@ JOIN (
 ) promoted ON e.employee_id = promoted.employee_id;
 ```
 
-Record both plans here and note which shows a `DEPENDENT SUBQUERY` in
+Recorded both plans here and note one shows a `DEPENDENT SUBQUERY` in
 `select_type` (Q6 — the more expensive pattern, since it's evaluated once
 per outer row) versus a plain `DERIVED` table (Q6b — evaluated once,
 overall).
+
+Find screenshot in `finding2.png`.
 
 
 ---
