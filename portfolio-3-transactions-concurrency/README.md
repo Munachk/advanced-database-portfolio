@@ -70,8 +70,7 @@ should be **unchanged** from "Before" (the invalid grade was rejected).
 
 ### 5. Isolation levels
 Follow the SQL-only walkthrough in `isolation-levels.md` using two
-separate browser phpMyAdmin sessions (or the MySQL CLI). Screenshot the
-before/after `SELECT` results inside the open transaction.
+separate browser phpMyAdmin sessions (or the MySQL CLI).
 
 ## Screenshots checklist
 
