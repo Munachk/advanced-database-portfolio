@@ -90,16 +90,15 @@ Recorded both plans here and note one shows a `DEPENDENT SUBQUERY` in
 per outer row) versus a plain `DERIVED` table (Q6b — evaluated once,
 overall).
 
-Find screenshot in `finding2.png`.
+Find screenshot in `finding2.png.png`.
 
 
 ---
 
-## Finding 3: window functions (Q8, Q9)
+## Finding 3: window functions
 
 `RANK() OVER (PARTITION BY department_id ORDER BY hire_date)` requires
-MySQL 8.0+ (window functions did not exist in 5.7 and earlier — confirm
-your version supports this before relying on Q8/Q9).
+MySQL 8.0+ (window functions did not exist in 5.7 and earlier.
 
 ```sql
 EXPLAIN SELECT e.first_name, e.last_name, d.department_name, e.hire_date,
@@ -108,30 +107,21 @@ FROM employee e JOIN department d ON e.department_id = d.department_id
 WHERE e.status = 'active';
 ```
 
-Record whether the plan shows a `Using filesort` step in `Extra` — this
+Recorded whether the plan shows a `Using filesort` step in `Extra` — this
 indicates MySQL had to sort in memory/disk to compute the window ranking.
+
 A composite index on `(department_id, hire_date)` (not currently in
-`schema_mysql.sql`) could let the sort use the index instead — worth
-testing as a stretch goal:
+`schema_mysql.sql`) could let the sort use the index instead
 
 ```sql
 CREATE INDEX idx_employee_dept_hiredate ON employee(department_id, hire_date);
 -- re-run the EXPLAIN above and compare the Extra column
 ```
+find screenshot in `finding3a.png` and `finding3b.png`
+
 
 ---
 
-## Summary table (fill in once you've run everything above)
-
-| Query | Technique demonstrated | Index used? | Notable finding |
-|-------|------------------------|--------------|------------------|
-| Q1 | Simple filter | | |
-| Q2 | Multi-table JOIN | | |
-| Q3 | Aggregate (GROUP BY) | | |
-| Q6 vs Q6b | Correlated subquery vs join rewrite | | |
-| Q7 | Nested subquery | | |
-| Q8 | Window function (RANK) | | |
-| Q9 | Window function (running total) | | |
 
 ---
 
@@ -139,6 +129,8 @@ CREATE INDEX idx_employee_dept_hiredate ON employee(department_id, hire_date);
 
 - [ ] `show_version.png` — output of `SELECT VERSION();`
 - [ ] `explain-before-index.png`
-- [ ] `explain-after-index.png` (or `explain-analyze-*.png` if 8.0.18+)
-- [ ] `explain-q6-vs-q6b.png`
+- [ ] `explain-after-index.png` (or `explain-analyze-after_index*.png` if 8.0.18+)
+- [ ] `finding2.png.png`
+- [ ] `finding3a.png`
+- [ ] `finding3b.png`
 - [ ] `show-index-employee.png` — output of `SHOW INDEX FROM employee;`
