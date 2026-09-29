@@ -10,7 +10,7 @@ Portfolios 1–2.
 1. Copy this whole folder into your XAMPP `htdocs` directory, e.g.:
    - Windows: `C:\xampp\htdocs\portfolio3\`
    - Mac: `/Applications/XAMPP/htdocs/portfolio3/`
-2. Confirm Apache **and** MySQL are both running in the XAMPP Control Panel.
+2. Confirm Apache **and** MySQL are both running in the XAMPP Control Panel. Screenshot in `apache_mysql_running.png`
 3. Confirm `config.php`'s credentials match your setup (default XAMPP
    root password is blank — only change this if you set a password).
 4. You should already have `primetrust_hr` populated from Portfolios 1–2.
