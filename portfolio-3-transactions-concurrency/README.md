@@ -53,7 +53,7 @@ should be **unchanged** from "Before" (the invalid grade was rejected).
    SELECT grade_id FROM employee WHERE employee_id = 2;
    ```
    It will have only gone up by **1**, even though two updates ran — one
-   promotion was silently lost. Screenshot this too.
+   promotion was silently lost.
 
 ### 4. Concurrency control mechanism (the fix)
 1. Run `reset_demo_data.sql` again to reset.
