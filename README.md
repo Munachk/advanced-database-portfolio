@@ -74,7 +74,7 @@ advanced-database-portfolio/
 |---|---|---|
 | Portfolio 1: Database Design and Modelling | ✅ Complete | 7 |
 | Portfolio 2: Query Processing and Optimisation | ✅ Complete | 7 |
-| Portfolio 3: Transactions and Concurrency | 🔄 In progress | 7 |
+| Portfolio 3: Transactions and Concurrency | ✅ Complete | 7 |
 | Portfolio 4: NoSQL and Advanced Data Models | ⬜ Not started | 7 |
 | Portfolio 5: Distributed and Cloud Database Exercise | ⬜ Not started | 6 |
 | Final Documentation | ⬜ Not started | 6 |
