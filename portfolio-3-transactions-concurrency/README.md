@@ -77,7 +77,7 @@ before/after `SELECT` results inside the open transaction.
 
 - [ ] `demo1-commit-output.png`
 - [ ] `demo2-rollback-output.png`
-- [ ] `demo3-tab1.png` and `demo3-tab2.png` (side by side if possible)
+- [ ] `demo3-tab1.png` and `demo3-tab2.png`
 - [ ] `demo3-db-value-after.png` (the lost-update proof)
 - [ ] `demo4-tab1.png` and `demo4-tab2.png`
 - [ ] `demo4-db-value-after.png` (the fix proof)
@@ -87,7 +87,5 @@ before/after `SELECT` results inside the open transaction.
 
 Because demo3 and demo4 both modify the *same* row, you must reset
 `employee_id = 2`'s grade between test runs, or your "before" state won't
-match what the write-up describes. This is also worth a line in your
-individual reflection — it's the kind of test-data-management detail that
-shows you actually understood what you were testing, not just ran scripts.
+match what the write-up describes.
 
