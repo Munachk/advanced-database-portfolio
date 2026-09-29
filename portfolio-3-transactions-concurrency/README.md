@@ -81,6 +81,8 @@ separate browser phpMyAdmin sessions (or the MySQL CLI).
 - [ ] `demo4-tab1.png` and `demo4-tab2.png`
 - [ ] `demo4-db-value-after.png` (the fix proof)
 - [ ] `isolation-repeatable-read.png`
+- [ ] `isolation-repeatable-read1.png`
+- [ ] `isolation-repeatable-read2.png`
 
 ## Note on the `reset_demo_data.sql` step
 
