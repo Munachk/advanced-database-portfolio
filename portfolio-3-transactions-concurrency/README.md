@@ -8,7 +8,7 @@ Portfolios 1–2.
 ## Setup
 
 1. Copy this whole folder into your XAMPP `htdocs` directory, e.g.:
-   - Windows: `C:\xampp\htdocs\portfolio3\`
+   - Windows: `C:\xampp\htdocs\portfolio3\` - screenshot in `xampp-htdocs.png`
    - Mac: `/Applications/XAMPP/htdocs/portfolio3/`
 2. Confirm Apache **and** MySQL are both running in the XAMPP Control Panel. Screenshot in `apache_mysql_running.png`
 3. Confirm `config.php`'s credentials match your setup (default XAMPP
