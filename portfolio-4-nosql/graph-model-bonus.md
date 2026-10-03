@@ -48,8 +48,8 @@ expresses them as a single pattern match instead.
 
 ## If you want to actually deploy this
 
-- **Neo4j AuraDB Free** (cloud, no install) — sign up, get a connection
+- **Neo4j AuraDB Free** (cloud, no install)-sign up, get a connection
   URI, and run the Cypher above in the built-in browser query console.
-- **Neo4j Desktop** (local) — similar to installing XAMPP, gives you a
+- **Neo4j Desktop** (local)- similar to installing XAMPP, gives you a
   local instance plus the Neo4j Browser UI.
 
