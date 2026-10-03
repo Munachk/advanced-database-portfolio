@@ -1,8 +1,6 @@
-# Bonus: Graph Model for Organisational Hierarchy
+# Graph Model for Organisational Hierarchy
 
-This is a supplementary discussion, not a required second implementation.
-Include it if you want to strengthen "application of advanced database
-concepts" — but the document-model MongoDB work is the primary,
+This is a supplementary discussion, not a required second implementation as the document-model MongoDB work is the primary,
 fully-implemented deliverable for Portfolio 4.
 
 ## Why a graph fits this part of the problem
@@ -55,6 +53,3 @@ expresses them as a single pattern match instead.
 - **Neo4j Desktop** (local) — similar to installing XAMPP, gives you a
   local instance plus the Neo4j Browser UI.
 
-Either way, a screenshot of the graph visualisation (Neo4j's browser
-renders nodes and relationships visually) is strong evidence if you choose
-to build this out as a second NoSQL model.
