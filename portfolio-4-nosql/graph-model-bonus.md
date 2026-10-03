@@ -6,7 +6,7 @@ fully-implemented deliverable for Portfolio 4.
 ## Why a graph fits this part of the problem
 
 The relational schema handles "who reports to whom" through
-`department.department_head_id` and `employee.department_id` — this works
+`department.department_head_id` and `employee.department_id` - this works
 for one level, but a query like *"show me everyone in Ibrahim Musa's
 reporting chain, three levels down"* requires a recursive query
 (`WITH RECURSIVE` in MySQL 8+), which is awkward to write and can be slow.
