@@ -87,6 +87,7 @@ specific fast-read use case), not a wholesale replacement.
 - [ ] MongoDB `mongoDB.png` 
 - [ ] Create Compass DB  `compass_db.png`
 - [ ] Imported collection (5 documents, count = 5)  `imported.png`
+- [ ] Employees with 2+ promotions  `2 promotions.png`
 - [ ] The current department   `department-count.png`
 - [ ] The department-headcount aggregation result   `department-headcount`
 - [ ] The `$unwind` promotion-events query result   `unwind.png`
