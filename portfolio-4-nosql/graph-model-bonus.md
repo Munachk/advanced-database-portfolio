@@ -43,7 +43,7 @@ RETURN path
 ```
 
 Both of these would require either multiple self-joins with a fixed depth
-limit, or a recursive CTE, in the relational schema — the graph model
+limit, or a recursive CTE, in the relational schema; the graph model
 expresses them as a single pattern match instead.
 
 ## If you want to actually deploy this
