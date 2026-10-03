@@ -30,29 +30,8 @@ as required by the assessment brief.
  (tested locally via XAMPP / phpMyAdmin)
 - **Scripting:** PHP (`mysqli`/PDO) for Portfolio 3 transaction demos,
   Python for seed data generation
-- **NoSQL (Portfolio 4):** *TBD — MongoDB / Neo4j*
+- **NoSQL (Portfolio 4):** MongoDB and MongoDB compass
 - **Diagrams:** Mermaid (renders natively in GitHub Markdown)
-
----
-
-## Repository Structure
-
-```
-advanced-database-portfolio/
-├── portfolio-1-database-design/
-│   ├── schema_mysql.sql          -- MySQL 10.4.32 schema (6 tables, keys, constraints)
-│   ├── er-diagram.md             -- Mermaid ER diagram + relationship notes
-│   └── normalization.md          -- 1NF → 2NF → 3NF walkthrough
-├── portfolio-2-query-optimisation/
-│   ├── queries_mysql.sql         -- 10+ queries: joins, aggregates, subqueries, window functions
-│   ├── seed_mysql.sql            -- small seed set (10 employees)
-│   ├── seed_mysql_large.sql      -- larger seed set (120 employees) for index evidence
-│   └── performance-analysis.md   -- EXPLAIN findings, before/after indexing
-├── portfolio-3-transactions-concurrency/   (in progress)
-├── portfolio-4-nosql/                      (in progress)
-├── portfolio-5-distributed-cloud/          (in progress)
-└── README.md
-```
 
 ---
 
@@ -75,7 +54,7 @@ advanced-database-portfolio/
 | Portfolio 1: Database Design and Modelling | ✅ Complete | 7 |
 | Portfolio 2: Query Processing and Optimisation | ✅ Complete | 7 |
 | Portfolio 3: Transactions and Concurrency | ✅ Complete | 7 |
-| Portfolio 4: NoSQL and Advanced Data Models | ⬜ Not started | 7 |
+| Portfolio 4: NoSQL and Advanced Data Models | ✅ Complete | 7 |
 | Portfolio 5: Distributed and Cloud Database Exercise | ⬜ Not started | 6 |
 | Final Documentation | ⬜ Not started | 6 |
 
