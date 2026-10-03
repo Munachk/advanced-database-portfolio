@@ -74,10 +74,11 @@ learned.*
 - **AI tool used:** Claude (Anthropic)
 - **What it was used for:** drafting initial
   schema and query structure, generating seed/test data and explaining
-  normalization steps.
+  normalization steps. Also for the MongoDB explanations and developing the json employee file
 - **How the output was reviewed/verified:** all
   SQL was executed against a live MySQL instance via XAMPP/phpMyAdmin to
   confirm it runs correctly; schema and query logic were reviewed and
   understood, not copied blindly; execution plan evidence was independently captured from my own database, not assumed.
+  Same was tested on my MongoDB too.
 
 
