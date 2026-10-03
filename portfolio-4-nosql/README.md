@@ -83,9 +83,13 @@ specific fast-read use case), not a wholesale replacement.
 
 ## Screenshots checklist
 
-- [ ] Compass or mongosh showing the imported collection (5 documents, count = 5)
-- [ ] The department-headcount aggregation result
-- [ ] The `$unwind` promotion-events query result
-- [ ] Before/after of the `updateOne` promotion push (EMP-002's document)
-- [ ] The two schema-flexibility queries (with/without `certifications` field)
+- [ ] Compass `compass.png`
+- [ ] MongoDB `mongoDB.png` 
+- [ ] Create Compass DB  `compass_db.png`
+- [ ] Imported collection (5 documents, count = 5)  `imported.png`
+- [ ] The current department   `department-count.png`
+- [ ] The department-headcount aggregation result   `department-headcount`
+- [ ] The `$unwind` promotion-events query result   `unwind.png`
+- [ ] Before/after of the `updateOne` promotion push (EMP-002's document) `promotion-query.png`  `after-query.png`
+- [ ] The two schema-flexibility queries (with/without `certifications` field) `true.png`  `false.png`
 
