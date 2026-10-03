@@ -66,7 +66,7 @@ This is a genuine trade-off, not a strict improvement — see below.
   since there's no single source-of-truth row like the relational
   `department` table provides
 
-**Conclusion for your write-up:** the relational schema remains the
+**Conclusion:** the relational schema remains the
 system of record for transactional integrity (Portfolios 1–3); the
 document model is well suited as a **read-optimized view** layer for the
 HR profile screen specifically — a common real-world pattern (keep your
