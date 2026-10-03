@@ -79,7 +79,7 @@ specific fast-read use case), not a wholesale replacement.
 |---|---|
 | `employee_profiles.json` | 5 sample documents, deliberately with varying optional fields |
 | `mongo_commands.js` | Collection creation, queries, aggregation pipelines, update demo |
-| `graph-model-bonus.md` | Supplementary graph-model discussion for org hierarchy (optional) |
+| `graph-model-bonus.md` | Supplementary graph-model discussion for org hierarchy |
 
 ## Screenshots checklist
 
