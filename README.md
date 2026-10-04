@@ -1,7 +1,7 @@
 # Advanced Database Systems Portfolio — MIT 8103
 
 **Module:** MIT 8103 Advanced Database Systems
-**Assessment:** Individual Practical Database Portfolio (40 marks)
+**Assessment:** Individual Practical Database Portfolio
 **Academic Session:** 2026/2027 — First Semester Continuous Assessment
 
 ---
@@ -55,8 +55,8 @@ as required by the assessment brief.
 | Portfolio 2: Query Processing and Optimisation | ✅ Complete | 7 |
 | Portfolio 3: Transactions and Concurrency | ✅ Complete | 7 |
 | Portfolio 4: NoSQL and Advanced Data Models | ✅ Complete | 7 |
-| Portfolio 5: Distributed and Cloud Database Exercise | ⬜ Not started | 6 |
-| Final Documentation | ⬜ Not started | 6 |
+| Portfolio 5: Distributed and Cloud Database Exercise | ✅ Complete | 6 |
+| Final Documentation | ✅ Complete | 6 |
 
 ---
 
